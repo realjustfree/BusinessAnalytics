@@ -1,0 +1,46 @@
+---
+title: "my_intro"
+format: html
+editor: visual
+---
+
+# setting
+```{r}
+install.packages("devtools") 
+devtools::install_github("dominikjung42/dstools")
+install.packages("dplyr") 
+install.packages("ggplot2")
+install.packages("readxl")
+```
+
+```{r}
+
+library("dstools") 
+library("dplyr") 
+library("ggplot2") 
+library("readxl")
+
+
+library("dstools")
+
+```
+
+
+```{r}
+# data_set = data("productionlog_sample")
+# 이걸로는 data 할당안됨
+
+# data 로 부르면 그 변수명 자체가 메모리에 로드됨.
+# 바로 그 변수명 쓰거나, 변수를 다른 메모리에 할당해서 써야함.
+# data()가 데이터 읽어서 load 하고, return 이 없기 때문에? 아마 파일명 return 해서 파일명이 저장되는 듯
+# read_xcel 은 data 읽어서 변수할당 가능함.
+
+
+```
+
+```{r}
+data("productionlog_sample")
+data_set = productionlog_sample
+
+```
+
